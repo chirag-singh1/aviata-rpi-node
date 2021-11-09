@@ -1,4 +1,6 @@
 echo 'Executing central node script'
+echo 'Installing libssh dependency'
+echo "password" | sudo -S apt-get install -y libssh-dev
 echo 'Building central node'
 make && \
 chmod +x execute_ground && \
